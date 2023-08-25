@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@rxm7706](https://github.com/rxm7706/)
+* [@zaigner](https://github.com/zaigner/)
 
