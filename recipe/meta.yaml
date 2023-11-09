@@ -1,5 +1,5 @@
 {% set name = "robocorp-workitems" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/robocorp_workitems-{{ version }}.tar.gz
-  sha256: 1ff43d4e559b9e8451dfb5dc4bfb296008968b0d873b2a253a2e245d01a348ef
+  sha256: 838b427216d0d32f5442ecec34c4a6df58859b66241e8335ebef43e214501742
 
 build:
   noarch: python
