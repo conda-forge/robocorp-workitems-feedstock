@@ -1,5 +1,5 @@
 {% set name = "robocorp-workitems" %}
-{% set version = "1.4.4" %}
+{% set version = "1.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/robocorp_workitems-{{ version }}.tar.gz
-  sha256: 45676d42b0e462b9768056b4be48742b93dff8fb096c122252620dcbcc357f8c
+  sha256: cb14efd2b1a5d152b40449482fb1a9355a403038d5827a3b529bae8fc8b7ae2e
 
 build:
   noarch: python
@@ -15,7 +15,7 @@ build:
     - echo f | xcopy /f /y /S %RECIPE_DIR%\README.md %SRC_DIR%\README.md  # [win]
     - cp -R {{ RECIPE_DIR }}/README.md {{ SRC_DIR }}/README.md  # [unix]
     - {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 requirements:
   host:
     - python >=3.9,<4.0
